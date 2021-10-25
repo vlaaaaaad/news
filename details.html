@@ -1,0 +1,72 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>News App</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/details.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="topBar">
+        <a href="index.html" class="name" onclick="setCategory('trending');">News App</a>
+        <div class="searchContainer">
+            <a id="searchButton" class="searchButton">
+                <img src="img/searchIcon.png">
+            </a>
+            <input id="search" type="text" placeholder="Type something to start search">
+            <a id="clearButton" class="clearButton hide">
+                <img src="img/clearIcon.png">
+            </a>
+        </div>
+        <div class="nothing"></div>
+        <nav id="menu" class="menuList hidden">
+            <div class="dropdown">
+                <a href="#" id="categories" class="menuLink">Categories</a>
+                <ul id="categoriesList" class="dropdownContent">
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Sport</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">World</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Covid</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Business</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Politics</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Science</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Religion</a></li>
+                    <li><a href = "index.html" onclick="setCategory(this.text.toLowerCase());">Health</a></li>
+                </ul>
+                </div>
+              </div>
+            <a href="index.html" class="menuLink" onclick='setCategory("trending");'>🔥 Trending news</a>
+        </nav>
+        <a class="burgerButton" id="burgerButton">
+            <img src="img/burgerIcon.png">
+        </a>
+        
+    </header>
+    <main id="detailsContainer" class="detailsContainer">
+        <div class="imageWrapper"><img src="" class="image" id="detailsImage"></div>
+        <div class="article">
+            <h2 id="detailsHeadline"></h2>
+            <div id="detailsAuthor" class="author"></div>
+            <div id="detailsDate" class="date"></div>
+            <div class="separator"></div>
+            <div id="detailsContent"></div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <b>News App</b> 2021 copyright © all rights reserved
+    </footer>
+</body>
+    <script src="js/burger.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/detailsSearch.js"></script>
+</html>

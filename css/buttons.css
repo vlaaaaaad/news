@@ -1,0 +1,125 @@
+.burgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    align-self: center;
+    margin-left: auto;
+    transition: 0.5s;
+}
+
+.burgerButton img {
+    width: 18px;
+    height: 16px;
+}
+
+.burgerButton:hover {
+    transition: 0.5s;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.scrollToTopButton {
+    visibility: hidden;
+    position: fixed;
+    /* right: 0px; */
+    bottom: 100px;
+    padding: 10px;
+    background-color: #2f80ed;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.scrollToTopButton:hover {
+    filter:grayscale(0.25);
+}
+
+.cardActions .readMoreButton {
+    background: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.readMoreButton:hover {
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 32px;
+    border-radius: 5px 0px 0px 5px;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.searchButton img {
+    width: 18px;
+    height: 18px;
+    /* transition: 0.5s; */
+}
+
+.searchButton:hover {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.searchButton:hover img {
+    filter: invert(38%) sepia(65%) saturate(1397%) hue-rotate(192deg) brightness(98%) contrast(90%);
+}
+
+.clearButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 32px;
+    border-radius: 0px 5px 5px 0px;
+    align-self: center;
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hide {
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.clearButton img {
+    width: 13px;
+    height: 13px;
+    /* transition: 0.5s; */
+}
+
+.clearButton:hover {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.clearButton:hover img {
+    filter: invert(32%) sepia(99%) saturate(6447%) hue-rotate(339deg) brightness(101%) contrast(101%);
+}

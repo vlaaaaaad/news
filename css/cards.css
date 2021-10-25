@@ -1,0 +1,110 @@
+.cardContainer {
+    width: 100%;
+    padding: 90px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cardContainer .card {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
+
+.mainCard {
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.mainCard .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    padding: 40px 90px 40px 60px;
+    box-sizing: border-box;
+}
+
+.mainCard .content h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #2d3748;
+    cursor: pointer;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #718096;
+}
+
+.cardActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 15px;
+}
+
+.cardActions .date {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: #718096;
+}
+
+.viewed {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-image: url(../img/readIcon.png);
+    background-size: contain;
+}
+
+.mainCard img {
+    width: 45%;
+    height: 240px;
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.regularCard {
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.regularCard .content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.regularCard img {
+    width:  100%;
+    height: 180px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.regularCard h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2d3748;
+    cursor: pointer;
+}
+
